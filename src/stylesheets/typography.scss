@@ -1,0 +1,110 @@
+@import "bourbon";
+@import "color-variables";
+
+
+html,
+body {
+  font-size: 100%; 
+}
+
+body {
+  background: white;
+  color: $gray-dark;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  cursor: default; 
+}
+
+/* Default paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-rendering: optimizeLegibility;
+
+  aside {
+    font-size: 14px;
+    line-height: 1.35;
+    font-style: italic; 
+  }
+}
+
+
+a {
+  color: $blue-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+blockquote {
+  p {
+    font-style: italic;
+    text-align: left;
+    font-size: 21px;
+  }
+
+  footer {
+    font-weight: bold;
+  }
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.7;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 22px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+ol {
+  padding: 0px;
+  margin: 0 0 25px 25px;
+
+  li {
+    margin-bottom: 12px;
+    font-weight:bold;
+    font-size:18px;
+  }
+}
+
+
+
+ul {
+  padding: 0px;
+  margin: 0 0 25px 25px;
+
+  li {
+    margin-bottom: 12px;
+    font-size:18px;
+  }
+}
+
+.no-style-type {
+  list-style-type:none;
+  margin: 0 0 25px 0px;
+}
+
+.section-headline {
+  text-align:center;
+}

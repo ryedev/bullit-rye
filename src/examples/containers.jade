@@ -1,0 +1,127 @@
+h2.section-headline Containers
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Single Column Container
+    .sg-demo
+      .callout-box 
+        h4 Questions? Want to know what makes us different?
+        p Call <strong><a href="tel:+18553992275">(855) 399-2275</a></strong> to talk to someone on the team.
+        span (You can also <a href="#">shoot us an email</a> or jump into our <a href="#">Academy Chat</a>.)
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          <strong>.callout-box</strong>
+            h4 Questions? Want to know what makes us different?
+            p. 
+              Call &lt;strong&gt;&lt;a href="tel:+18553992275"&gt; (855) 399-2275&lt;/a&gt;&lt;/strong&gt;
+              to talk to someone on the team.
+            span.
+              (You can also &lt;a href="#"&gt;shoot us an email&lt;/a&gt; or jump into 
+                our &lt;a href="#"&gt;Academy Chat&lt;/a&gt;.)
+
+
+  .sg-section
+    .sg-info
+      h3 Two Column With Divider
+    .sg-demo
+      .two-col-sb
+        .row.divide-container
+          .col-sm-6.divider-left
+            h2 Left Column 
+            p Pork belly banjo asymmetrical slow-carb, gluten-free farm-to-table synth lo-fi.</em>
+            p <em>Irony kitsch synth meh. Food truck Blue Bottle swag, wolf Odd Future slow-carb Etsy Intelligentsia synth High Life narwhal tofu. Sustainable ugh kale chips pop-up Blue Bottle Intelligentsia, Odd Future chillwave.</em>
+          .col-sm-6
+            h2 Right Column
+            ul
+              li sold out locavore irony
+              li Austin bicycle rights beard 
+              li small batch vegan sriracha PBR
+           
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .two-col-sb
+            .row
+              //add .divider-left to the column on the left to create the divider
+              .col-sm-6.divider-left
+                h2 Left Column 
+                p Copy
+              .col-sm-6
+                h4 Right Column
+                p More copy
+
+  
+  .sg-section
+    .sg-info
+      h3 Two Column Bio Container
+    .sg-demo
+      //- don't do this in real life.
+      .bio(style="margin: 0px;") 
+        .bio-left
+          img.photo-bio(src="images/sg/nyancat.gif")
+          a.btn.btn-contact(href="#")
+            img(src="http://theironyard.com/images/email.png")
+            p Say hello
+        .bio-right
+          h2 Nyan
+          h4 Erlang Engineer
+          p American Apparel wayfarers normcore mustache, Truffaut Intelligentsia XOXO irony deep v photo booth locavore next level. Helvetica post-ironic four loko dreamcatcher normcore gluten-free, tofu Wes Anderson. Next level retro Schlitz, cardigan cliche jean shorts shabby chic. Hashtag cliche bitters cred Banksy salvia. Austin ennui raw denim Thundercats, wolf asymmetrical paleo. 
+          ul.links
+            li: a(href="#") Link 1
+            li: a(href="#") Link 2
+            li: a(href="#") Link 3
+            li: a(href="#") Link 4
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---   
+          .bio
+            .bio-left
+              img.photo-bio(src="images/sg/nyancat.gif")
+              a.btn.btn-contact(href="#")
+                img(src="http://theironyard.com/images/email.png")
+                p Say hello
+            .bio-right
+              h2 Nyan
+              h4 Erlang Engineer
+              p ...
+              ul.links
+                li: a(href="#") Link 1
+                li: a(href="#") Link 2
+                li: a(href="#") Link 3
+                li: a(href="#") Link 4
+
+  .sg-section
+    .sg-info
+      h3 Three Column Container w/Call To Action (cta)
+    .sg-demo
+      .three-col-cta.row
+        .col-lg-2.col-sm-2
+          .image-box
+            img(src="http://theironyard.com/images/icons/front-end-engineering-logo.png")
+        .col-lg-7.col-sm-6
+          h3 Copy Title
+          p Tote bag meh +1, master cleanse sustainable literally chia messenger bag fingerstache cray organic. Banksy deep v before they sold out iPhone umami. 
+        .col-lg-3.col-sm-4.cta-box
+          a(href="#").btn.hover-yellow Learn More
+      
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+          .three-col-cta.row
+            .col-lg-2.col-sm-2
+              .image-box
+                img(src="images/icons/front-end-engineering-logo.png")
+            .col-lg-7.col-sm-6
+              h3 Copy Title
+              p Tote bag meh ...
+            .col-lg-3.col-sm-4.cta-box
+              a(href="#").btn.hover-yellow Learn More
+  

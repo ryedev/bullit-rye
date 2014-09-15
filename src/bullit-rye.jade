@@ -1,0 +1,46 @@
+doctype
+html
+  head
+    meta(name="HandheldFriendly" content="True")
+    meta(name="MobileOptimized" content="320")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    link(type="text/css" rel="stylesheet" media="all" href="stylesheets/bullit-rye.css")
+    link(type="text/css" rel="stylesheet" media="all" href="stylesheets/styleguide.css")
+    link(type="text/css" rel="stylesheet" media="all" href="stylesheets/prettify.css")
+    link(type="text/css" rel="stylesheet" media="all" href="webfonts/ss-social.css")
+    link(type="text/css" rel="stylesheet" media="all" href="webfonts/ss-standard.css")
+
+    link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
+
+    //- script(type="text/javascript" src="//use.typekit.net/zza7guc.js")
+    //- script(type="text/javascript") try{Typekit.load();}catch(e){}
+  body(onload="prettyPrint()")
+    .container
+      .row
+        .col-md-12.sg-header
+          h1 Welcome to Ghost Shield
+          h3 The Official Iron Yard Styleguide
+
+        .col-md-12.sg-main
+          #colors
+            include examples/colors
+          #buttons
+            include examples/buttons
+          #typography
+            include examples/typography
+          #photos
+            include examples/photos-images
+          #tables
+            include examples/tables
+          #containers
+            include examples/containers
+          #navigation
+            include examples/navigation
+          #layout
+            include examples/layout.jade  
+          //- #headers
+          //-   include examples/headers
+
+    script(src="scripts/prettify.js")
+    script(src="scripts/lang-jade.js")

@@ -1,0 +1,209 @@
+// Color Variables:
+$gray-lighter: #F2F4F5;
+$gray-light: #E3E7E9;
+$gray-med: #ADB8C4;
+$gray-dark: #39474e;
+$red: #A02121;
+$red-orange:#B8584B;
+$blue: #2C94CE;
+$blue-contact: #20a3d9;
+$blue-link: #158cbd;
+$yellow: #CEAE2C;
+$gold: #C4843C;
+$green: #3AC29C; // location page green
+$teal: #3FC8C3;
+$turquoise: #349FAD;
+$purple: #a36bcd;
+
+
+// Element tags are listed first, then classes
+// All items & properties listed in alphabetical order
+// When using the background classes we will need to override the hover state 
+// for the header sections
+
+.blue-bg {
+  background-color: $blue;
+  color: white;
+}
+
+.blue-triangle {
+  border-top: 20px solid $blue;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.blue-link-bg {
+  background-color: $blue-link;
+  color: white;
+}
+
+.blue-link-triangle {
+  border-top: 20px solid $blue-link;
+}
+
+.blue-contact-bg {
+  background-color: $blue-contact;
+  color: white;
+}
+
+.gold-bg {
+  background-color: $gold;
+  color: white;
+}
+
+.gold-triangle {
+  border-top: 20px solid $gold;
+}
+
+.gold-text {
+  color: $gold;
+}
+
+.gray-dark-bg {
+  background-color: $gray-dark;
+  color: white;
+}
+
+.gray-dark-text {
+  color: $gray-dark;
+}
+
+.gray-dark-triangle {
+  border-top: 20px solid $gray-dark;
+}
+
+.gray-lighter-bg {
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
+
+.gray-lighter-triangle {
+  border-top: 20px solid $gray-lighter;
+}
+
+.gray-light-bg {
+  background-color: $gray-light;
+  color: $gray-dark;
+}
+
+.gray-light-triangle {
+  border-top: 20px solid $gray-light;
+}
+
+.gray-med-bg {
+  background-color: $gray-med;
+  color: $gray-dark;
+}
+
+.gray-med-triangle {
+  border-top: 20px solid $gray-med;
+}
+
+.gray-med-text {
+  color: $gray-med;
+}
+
+.green-bg {
+  background-color: $green;
+  color: white;
+}
+
+.green-text {
+  color: $green;
+}
+
+.green-triangle {
+  border-top: 20px solid $green;
+}
+
+.purple-bg {
+  background-color:$purple;
+  color: white;
+}
+
+.purple-text {
+  color: $purple;
+}
+
+.purple-triangle {
+  border-top: 20px solid $purple;
+}
+
+.red-bg {
+  background-color: $red;
+  color: white;
+}
+
+.red-triangle {
+  border-top: 20px solid $red;
+}
+
+.red-text {
+  color: $red;
+}
+
+.red-orange-bg {
+  background-color: $red-orange;
+  color: white;
+}
+
+.red-orange-triangle {
+  border-top:20px solid $red-orange;
+}
+
+.red-orange-text {
+  color:$red-orange;
+}
+
+.teal-bg {
+  background-color: $teal;
+  color: white;
+}
+
+.teal-triangle {
+  border-top: 20px solid $teal;
+}
+
+.teal-text {
+  color: $teal;
+}
+
+.turquoise-bg {
+  background-color: $turquoise;
+  color: white;
+}
+
+.turquoise-triangle {
+  border-top: 20px solid $turquoise;
+}
+
+.turquoise-text {
+  color: $turquoise;
+}
+
+.yellow-bg {
+  background-color: $yellow;
+  color: white;
+}
+
+.yellow-triangle {
+  border-top: 20px solid $yellow;
+}
+
+.yellow-text {
+  color: $yellow;
+}
+
+
+// Link styling - white 
+.link-w {
+  a {
+    color: white;
+    
+    &:hover {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@import "bourbon";
+@import "color-variables";
+
+body {
+  background: #fdfdfd;
+}
+
+pre {
+  font-size: 15px;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.sg-header {
+  text-align: center;
+}
+
+.sg-sidebar {
+  ul {
+    position: fixed;
+  }
+}
+
+.sg-buttons {
+  .sg-example {
+    margin: 15px 0px;
+  }
+}
+
+.sg-colors {
+  .row {
+    margin-bottom: 50px;
+  }
+}
+
+.sg-circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.sg-container {
+  padding-bottom: 25px;
+}
+
+
+.sg-section {
+  border-radius: 4px;
+  background: white;
+  border: 1px solid $gray-med;
+  margin-bottom: 30px;
+
+  .sg-info {
+    padding: 15px;
+    border-bottom: 1px solid $gray-med;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin-bottom: 0
+    }
+  }
+
+  .sg-demo {
+    padding: 15px;
+    background: url('../images/sg/checked.png');
+
+  }
+
+  .sg-code {
+    padding: 15px;
+    position: relative;
+    border-top: 1px solid $gray-med;
+
+    pre {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #5FA6F3;
+      color: white;
+      // border-right: 1px solid $gray-med;
+      // border-bottom: 1px solid $gray-med;
+      padding: 2px 8px;
+      font-size: 13px;
+      font-weight: bolder;
+
+      content: 'Jade';
+    }
+  }
+
+  .sub-nav {
+    padding: 2px 20px 20px 20px;
+  }
+}
+
+//Over-ride styles for the layout section
+
+.header {
+  margin:0 auto;
+}
+
+.primary-nav {
+  left: 18px;
+  
+  @media screen and (max-width: 768px) {
+    left:0px
+  }
+}
+
+.sub-nav {
+  margin:0 auto;
+}
+
+

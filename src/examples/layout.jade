@@ -1,0 +1,100 @@
+h2.section-headline Layout
+.sg-container
+  .sg-section
+    .sg-info
+      h3 Complete Nav-Bar with Triangle
+    .sg-demo
+      .container-fluid
+        .header.gray-dark-bg
+          .wrapper
+            .logo
+              img(src="images/iron-yard-logo.svg")
+            .nav
+              .primary-nav
+                ul
+                  li: a(href="#") Locations
+                  li: a(href="#") Events
+                  li: a(href="#") Academy
+                  li: a(href="#") Accelerator
+              
+              .secondary-nav
+                ul
+                  li: a(href="#") Jobs
+                  li: a(href="#") About
+                  li: a(href="#") News
+                  li: a(href="#") Blog           
+        .row.sub-nav.gray-dark-bg
+          .wrapper 
+            h2 Cool Nav
+            ul
+              li: a(href="#") Hire Graduates
+              li: a(href="#") Alumni
+              li: a(href="#") FAQs
+              li: a(href="#") Kids Classes      
+            .triangle.gray-dark-triangle(style="bottom:-58px")  
+
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+            .container-fluid
+              .header.gray-dark-bg
+                .wrapper
+                  .logo
+                    img(src="images/iron-yard-logo.svg")
+                  .nav
+                    .primary-nav
+                      ul
+                        li: a(href="#") Locations
+                        li ...
+                    .secondary-nav
+                      ul
+                        li ...
+             
+              .row.sub-nav.gray-dark-bg
+                .wrapper 
+                  h2 Cool Nav
+                  ul
+                    li: a(href="#") Hire Graduates
+                    li ...
+                  // the second class is used to determine the color of the triangle. 
+                  // the color must match the class applied to .header and .sub-nav           
+                  .triangle.gray-dark-triangle
+
+.sg-container 
+  .sg-section
+    .sg-info
+      h3 Screen-Width Section
+    .sg-demo(style="padding:0")
+      .horizontal-section.gray-light-bg
+        .container-fluid(style="width:90%")
+          .row
+            .col-md-6
+              h2 Awesome Content
+              p Letterpress quinoa raw denim, hoodie kale chips stumptown biodiesel Echo Park scenester XOXO 8-bit you probably haven't heard of them. Banksy Helvetica gentrify, distillery hoodie selfies art party American Apparel Truffaut fashion axe irony Tumblr salvia 8-bit keffiyeh.
+            .col-md-6
+              h2 Great Job
+              ul
+                li Sustainable kale chips
+                li Blue Bottle boat shoes
+                li Odd Future chillwave
+    .sg-code
+      pre
+        code.prettyprint.lang-jade.
+          ---
+            // As long as you have a .container nested within the .horizontal-section div,
+            // you can use whatever content you like within this class.
+            .horizontal-section.gray-light-bg
+              .container
+                .row
+                  .col-md-6
+                    h2.section-headline Awesome Content
+                    p Letterpress quinoa raw denim, 8-bit stumptown biodiesel. . . 
+                  .col-md-6
+                    h2.section-headline Great Job
+                    ul
+                      li Sustainable kale chips
+                      li Blue Bottle boat shoes
+                      li Odd Future chillwave
+            //If .horizontal-section is the final element on the page before the footer, add .last to .horizontal-section to elimimate space between the div and the footer
+

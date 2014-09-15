@@ -1,0 +1,246 @@
+@import "bourbon";
+@import "color-variables";
+
+// Found this in use on the site
+// Use as a visual divider between content sections
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid $gray-lighter;
+	clear: both;
+}
+
+.btn-container {
+	margin-top: 10px;
+	@media (min-width: 992px) {
+		margin-top:68px
+	}
+}
+
+.callout-box {
+	background: $gray-light;
+	text-align: center;
+	padding: 4% 4%;
+	margin: 0px auto;
+	margin-bottom: 33px;
+	width: 92%;
+	font-size: 15px;
+
+	h1, h2, h3, h4, h5 {
+		margin-top:0;
+	}
+}
+
+// Two Column Container Styles
+// Two Column Bio Container
+// This may need to be revisited depending on the width of the container
+// This element is placed in
+.bio {
+	@extend .row;
+	@include clearfix;
+
+	background: $gray-light;
+	padding-top: 20px;
+	margin-bottom:30px;
+
+	.btn {
+		width: 271px;
+		display: block;
+		margin: 5px auto;
+	}
+
+	p {
+		padding-right: 15px;
+		@media (max-width:992px){
+			padding-right:20px;
+			padding-left:20px;
+		}
+	}
+
+	h2 {
+		margin: 0px;
+		@media (max-width:992px){
+			padding-right:20px;
+			padding-left:20px;
+		}
+	}
+
+	h4 {
+		font-weight: normal;
+		@media (max-width:992px){
+			padding-right:20px;
+			padding-left:20px;
+		}
+	}
+
+	ul.links {
+		padding-bottom: 19px;
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0px;
+		
+		li {
+			margin-right: 20px;
+			display: inline-block;
+			list-style-type: none;
+		}
+
+		@media (max-width:992px){
+			padding-left:20px;
+		}
+	}
+
+	.bio-left {
+		@extend .col-sm-5;
+		margin: 0px auto;
+		padding-bottom: 20px;
+	}
+
+	.bio-right {
+		@extend .col-sm-7;
+	}
+}
+
+// this class is to be used on rows that are broken up by vertical dividers until the columns break onto new lines. 
+// use the .left-box or .right-box on the respective columns depending on which has more content so that the divider is the full height of the row.
+.divide-container {
+	display: flex;
+	align-items: stretch;
+
+	p {
+		color: #7D8A8E;
+	}
+	
+	span {
+		margin-top: 0;
+		color: #7D8A8E;
+		font-size: 16px;
+		line-height: 20px;
+		font-style: italic;
+	}
+
+	.divider-left {
+		border-right:3px solid #E3E7E9;
+	}
+
+
+	@media (max-width:768px) {
+		display:inherit;
+
+		.divider-left {
+			border-right:none;
+		}
+	}
+}
+
+.mobile-container {
+	margin-bottom:30px;
+
+	h1,h2,h3,h4 {
+		margin-top:4px;
+		margin-bottom:0;
+	}
+
+	h2 {
+		margin-bottom:20px;
+	}
+
+	ul {
+
+		li {
+			margin-bottom:0;
+		}
+	}
+
+	.left-column {
+		box-shadow:  inset -8px 0 7px -12px rgba(40, 40, 40, 0.68);
+		 
+		@media (max-width:768px) {
+		 	box-shadow: 0 0 0 0;
+		}
+	}
+
+	@media (max-width: 992px){
+		text-align:center;
+	}
+}
+
+.profile-box {
+		text-align: center;
+		display: inline-block;
+		margin: 0 20px;
+
+		p {
+			color: #8A8A8A;
+			font-size: 14px;
+			margin-top:0;
+		}
+
+		ul {
+			border-top:1px solid #777;
+			border-bottom:1px solid #777;
+
+			li {
+				display:inline-block;
+				margin: 5px 2px 2px;
+				padding: 0px;
+
+				img {
+					background-color:#888;
+					height:20px;
+
+					&:hover {
+						background-color:$turquoise;
+					}
+				}
+			}
+		}
+}
+
+// Begin Three Column Container Styling
+// Three Column Container w/Call To Action (cta)
+.three-col-cta {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	.image-box {
+		margin: 0px auto;
+		text-align: center;
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.cta-box {
+		text-align: center;
+		padding-top: 35px;
+
+		a {
+			float: right;
+			@media (max-width: 768px) {
+				margin-top: 20px;
+				float: none;
+				text-align: center;
+			}
+		}
+
+		@media (max-width: 768px) {
+			padding-top:0;
+		}
+	}
+
+	h3 {
+		margin: 0px;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+
+	&.no-mobile-img {
+		@media (max-width: 768px) {
+			.image-box {
+				display: none;
+			}
+		}
+	}
+}
