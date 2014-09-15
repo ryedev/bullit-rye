@@ -1,0 +1,22 @@
+{
+  "name": "bullit-rye",
+  "version": "0.0.0",
+  "authors": [
+    "jhendley25 <jake.hendley25@gmail.com>"
+  ],
+  "description": "The coolest boilerplate code ever",
+  "main": "dist/bullit-rye.css",
+  "keywords": [
+    "wow",
+    "cool"
+  ],
+  "license": "MIT",
+  "homepage": "ryedev.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
